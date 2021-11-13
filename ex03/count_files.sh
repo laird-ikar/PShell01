@@ -1,1 +1,1 @@
-find . -type fd -name "*" | wc -l | tr -d " \t"
+find . \( -type f -o -type d \) -name "*" | wc -l | tr -d " \t"
